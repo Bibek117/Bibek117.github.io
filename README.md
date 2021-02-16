@@ -25,4 +25,4 @@ Will be doing javascripts projects and challengs such as counter,rockpaperscisso
 >A simple digital clock that shows current time
 <hr />
 
-`To be continued.....`
+`To be continued..............`
