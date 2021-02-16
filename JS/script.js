@@ -137,3 +137,18 @@ let showTime = () =>{
 }
 setInterval(showTime,1000);
 //showTime();
+
+//Challenge 6: Random hex color generator
+
+let hexColor = () =>{
+    var i,accessor;
+    var hex = [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'];
+    var hexCode = "#";
+    for(i=0;i<6;i++){
+        accessor= Math.floor(Math.random()*hex.length);
+        hexCode +=hex[accessor];
+    }
+    console.log(hexCode);
+    document.getElementById('hexagon').style.backgroundColor = hexCode;
+};
+//document.getElementById('hexagon1').addEventListener('click',hexColor);

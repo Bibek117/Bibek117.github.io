@@ -25,4 +25,8 @@ Will be doing javascripts projects and challengs such as counter,rockpaperscisso
 >A simple digital clock that shows current time
 <hr />
 
+### Challenge-6: `Random hex color generator`
+>It generates a random hex color-code 
+>And changes the background color on click
+
 `To be continued..............`
