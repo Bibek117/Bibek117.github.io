@@ -21,4 +21,8 @@ Will be doing javascripts projects and challengs such as counter,rockpaperscisso
 >Simply increases and decreases value on screen when clicked
 <hr />
 
+### Challenge-5: `Digital Clock`
+>A simple digital clock that shows current time
+<hr />
+
 `To be continued.....`

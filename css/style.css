@@ -2,10 +2,10 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0;
+    margin: 50px 0 50px 0;
     padding:0;
 }
-.container-main-1,.container-main-2,.container-main-3,.container-main-4{
+.container-main-1,.container-main-2,.container-main-3,.container-main-4,.container-main-5{
     margin:0 auto;
     width: 80%;
     border:1px solid black;
@@ -14,7 +14,7 @@ body{
 .container-main-1{
     margin-top:20px;
 }
-.container-1,.container-2,.container-3,.container-4{
+.container-1,.container-2,.container-3,.container-4,.container-5{
     display: flex;
     justify-content: space-around;
     flex-wrap:wrap;
@@ -45,4 +45,21 @@ body{
 .outputdiv h4{
     color: orange;
     font-size: 3rem;
+}
+#clock-wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image:  linear-gradient(to right, #c92814, #d56100, #d49100, #c6bf00, #a8eb12);
+    height:60px;
+    width:250px;
+    border-radius: 10px;
+}
+#clock{
+    font-size: 2rem;
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    height:40px;
+    width:230px;
 }

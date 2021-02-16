@@ -57,7 +57,7 @@ function decideWinner(humanChoice,botChoice){
     };
     var yourScore = dbsdeciding[humanChoice][botChoice];
     //var computerScore = dbsdeciding[botChoice][humanChoice];
-    //console.log(yourScore);
+    console.log(yourScore);
     return yourScore;
 };
 //decideWinner('paper','paper');
@@ -112,3 +112,28 @@ function resetValue(){
     count =0;
     displayCount();
 }
+
+// Challenge-5 :Digital clock
+
+let showTime = () =>{
+    var dateTime = new Date();
+    var hours = dateTime.getHours();
+    var minutes = dateTime.getMinutes();
+    var seconds = dateTime.getSeconds();
+    var am_pm = "AM";
+    if(hours > 12){
+        hours = hours - 12;
+        am_pm = "PM"
+    }else{
+        am_pm = "AM";
+    }
+    if(hours == 0){
+        hours=12;
+    }
+    hours = (hours < 10)?`0${hours}`:hours;
+    minutes = (minutes <10)?`0${minutes}`:minutes;
+    seconds = (seconds < 10)? `0${seconds}`:seconds;
+    document.getElementById('clock').innerHTML = `${hours}:${minutes}:${seconds} ${am_pm}`;
+}
+setInterval(showTime,1000);
+//showTime();
