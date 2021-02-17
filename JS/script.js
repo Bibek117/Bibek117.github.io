@@ -152,3 +152,37 @@ let hexColor = () =>{
     document.getElementById('hexagon').style.backgroundColor = hexCode;
 };
 //document.getElementById('hexagon1').addEventListener('click',hexColor);
+
+//Challenge 7: stop-watch
+const displayId = document.getElementById('countDisplay');
+var counting = 0,min = 0,hr = 0;
+var countInterval;
+let startCount = () =>{
+      countInterval = setInterval(mainCount,1000);   
+}
+
+let mainCount = () =>{
+    counting++;
+    if(counting==60){
+       counting=0;
+       min++;
+       min = (min < 10)?`0${min}`:min;
+       if(min==60){
+           min=0;
+           hr++;
+          hr = (hr < 10)?`0${hr}`:hr;
+       }
+    }
+    counting= (counting < 10)?`0${counting}`:counting;
+//console.log(counting);
+  displayId.innerHTML= `${hr}:${min}:${counting}`; 
+}
+let stopCount = () =>{
+    clearInterval(countInterval);
+}
+function initial() {
+    counting = 0;
+    min = 0;
+    hr = 0;
+   displayId.innerHTML = `${hr}:${min}:${counting}`;
+};

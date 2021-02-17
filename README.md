@@ -26,7 +26,11 @@ Will be doing javascripts projects and challengs such as counter,rockpaperscisso
 <hr />
 
 ### Challenge-6: `Random hex color generator`
->It generates a random hex color-code 
+>It generates a random hex color-code <br />
 >And changes the background color on click
+
+
+### Challenge-7: `Stop-watch`
+>A simple stop watch with start,stop,and reset feature
 
 `To be continued..............`
