@@ -166,7 +166,7 @@ let mainCount = () =>{
     if(counting==60){
        counting=0;
        min++;
-       min = (min < 10)?`0${min}`:min;
+      min = (min < 10)?`0${min}`:min;
        if(min==60){
            min=0;
            hr++;
@@ -175,7 +175,7 @@ let mainCount = () =>{
     }
     counting= (counting < 10)?`0${counting}`:counting;
 //console.log(counting);
-  displayId.innerHTML= `${hr}:${min}:${counting}`; 
+  displayId.textContent= `${hr}:${min}:${counting}`; 
 }
 let stopCount = () =>{
     clearInterval(countInterval);
